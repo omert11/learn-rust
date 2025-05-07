@@ -1,6 +1,7 @@
 mod calculator_v1;
 mod calculator_v2;
 mod hello;
+mod name_db;
 mod ui;
 
 fn main() {
@@ -8,6 +9,7 @@ fn main() {
         ("Hello", hello::hello as fn()),
         ("Calculator V1", calculator_v1::calculator as fn()),
         ("Calculator V2", calculator_v2::calculator as fn()),
+        ("Name DB", name_db::name_db as fn()),
     ];
 
     let input: u8 = ui::select_operation(
