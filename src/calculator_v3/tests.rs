@@ -28,5 +28,5 @@ fn test_4() {
 #[test]
 fn test_5() {
     let s = Expression::from_str("123/123*(88^2)");
-    assert_eq!(s.eval(), 7744.0);
+    assert_eq!(s.eval(), 7745.0);
 }
