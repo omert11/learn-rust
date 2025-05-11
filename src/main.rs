@@ -18,9 +18,5 @@ fn main() {
         "Select a function to run:",
         functions.iter().map(|(name, _)| *name).collect(),
     );
-    if input > 0 && input <= functions.len() as u8 {
-        functions[input as usize - 1].1();
-    } else {
-        println!("Invalid input");
-    }
+    functions[input as usize].1();
 }

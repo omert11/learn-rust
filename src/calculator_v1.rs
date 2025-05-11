@@ -23,10 +23,10 @@ pub fn calculator() {
     let b: f64 = ui::get_input("Enter the second number:");
 
     let result = match input {
-        1 => add(a, b),
-        2 => subtract(a, b),
-        3 => multiply(a, b),
-        4 => divide(a, b),
+        0 => add(a, b),
+        1 => subtract(a, b),
+        2 => multiply(a, b),
+        3 => divide(a, b),
         _ => {
             println!("Invalid input");
             return;
