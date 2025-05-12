@@ -3,7 +3,8 @@ mod calculator_v2;
 mod calculator_v3;
 mod hello;
 mod name_db;
-mod ui;
+mod todo;
+mod utils;
 
 fn main() {
     let functions = [
@@ -12,9 +13,10 @@ fn main() {
         ("Calculator V2", calculator_v2::calculator as fn()),
         ("Calculator V3", calculator_v3::main::calculator as fn()),
         ("Name DB", name_db::name_db as fn()),
+        ("Todo", todo::main::main as fn()),
     ];
 
-    let input: u8 = ui::select_operation(
+    let input: u8 = utils::ui::select_operation(
         "Select a function to run:",
         functions.iter().map(|(name, _)| *name).collect(),
     );

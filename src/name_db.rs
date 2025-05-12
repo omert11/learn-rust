@@ -5,7 +5,7 @@ use std::io::prelude::*;
 use std::io::BufReader;
 use std::path::Path;
 
-use crate::ui;
+use crate::utils::ui;
 
 const DIR_PATH: &str = "db";
 const FILE_PATH: &str = "db/name_db.txt";
