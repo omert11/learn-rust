@@ -13,7 +13,7 @@ fn divide(a: f64, b: f64) -> f64 {
     a / b
 }
 pub fn calculator() {
-    let input = ui::select_operation(
+    let input = ui::ui_select(
         "Select an operation:",
         vec!["Addition", "Subtraction", "Multiplication", "Division"],
     );

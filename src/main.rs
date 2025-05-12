@@ -16,7 +16,7 @@ fn main() {
         ("Todo", todo::main::main as fn()),
     ];
 
-    let input: u8 = utils::ui::select_operation(
+    let input: u8 = utils::ui::ui_select(
         "Select a function to run:",
         functions.iter().map(|(name, _)| *name).collect(),
     );
