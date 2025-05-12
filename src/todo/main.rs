@@ -18,7 +18,7 @@ pub fn main() {
 
 fn add_todo() {
     {
-        let mut db = TodoDb::new();
+        let mut db = TodoDb::new(None);
         let id = db.get_current_id();
         let title = ui::get_input::<String>("Enter a todo");
         let description = ui::get_input::<String>("Enter a description");
@@ -30,7 +30,7 @@ fn add_todo() {
 }
 
 fn list_todos() {
-    let mut db = TodoDb::new();
+    let mut db = TodoDb::new(None);
     let todos = db.get_todos();
     let todo_strings: Vec<String> = todos.iter().map(|todo| todo.to_string()).collect();
     let todo_strings: Vec<&str> = todo_strings.iter().map(|todo| todo.as_str()).collect();
@@ -68,7 +68,7 @@ fn list_todos() {
 }
 
 fn edit_todo(id: u32) -> Result<Todo, String> {
-    let db = TodoDb::new();
+    let db = TodoDb::new(None);
     let todo = db.get_todo(id);
     let title = ui::get_input_with_default::<String>(
         "Enter a title",

@@ -6,22 +6,27 @@ use crate::{
 };
 
 pub struct TodoDb {
+    path: String,
     todos: Vec<Todo>,
 }
 
-fn read_todos() -> Vec<Todo> {
+fn read_todos(path: &str) -> Vec<Todo> {
     let todos: Vec<Todo> =
-        serde_json::from_str(&read_to_string_or_default("db/todos.json", "[]").unwrap()).unwrap();
+        serde_json::from_str(&read_to_string_or_default(path, "[]").unwrap()).unwrap();
     todos
 }
 
 impl TodoDb {
-    pub fn new() -> Self {
-        let todos = read_todos();
-        Self { todos }
+    pub fn new(path: Option<&str>) -> Self {
+        let path = path.unwrap_or("db/todos.json").to_string();
+        let todos = read_todos(&path);
+        Self { path, todos }
     }
 
     pub fn add_todo(&mut self, todo: &Todo) {
+        if self.todos.iter().any(|t| t.get_id() == todo.get_id()) {
+            return;
+        }
         self.todos.push(todo.clone());
     }
 
@@ -59,6 +64,6 @@ impl TodoDb {
 impl Drop for TodoDb {
     fn drop(&mut self) {
         let todos = serde_json::to_string(&self.todos).unwrap();
-        write_to_file("db/todos.json", &todos).unwrap();
+        write_to_file(&self.path, &todos).unwrap();
     }
 }

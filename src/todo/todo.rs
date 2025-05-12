@@ -48,6 +48,11 @@ impl Todo {
     pub fn get_due_date(&self) -> String {
         self.due_date.clone()
     }
+
+    #[allow(dead_code)]
+    pub fn get_completed(&self) -> bool {
+        self.completed
+    }
 }
 
 impl Display for Todo {

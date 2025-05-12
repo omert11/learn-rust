@@ -43,46 +43,49 @@ cargo test
   - Dosya I/O işlemleri
   - Veri manipülasyonu
 
+- [x] Todo List Uygulaması (todo/)
+  - SQLite veritabanı entegrasyonu
+  - CRUD işlemleri
+  - Modüler yapı (mod.rs, todo.rs, db.rs)
+  - Struct ve Enum kullanımı
+  - Hata yönetimi
+  - Veritabanı işlemleri
+
 #### Yapılacak Projeler 📝
 
-##### 1. Temel Rust Kavramları
-- [ ] Basit Todo List Uygulaması
-  - Dosya I/O işlemleri
-  - Struct ve Enum kullanımı
-  - Vec ve HashMap kullanımı
+##### 1. Veri Yönetimi
+- [ ] Gelişmiş Veritabanı Uygulaması
+  - İlişkisel veritabanı tasarımı
+  - Karmaşık sorgular
+  - Migrations sistemi
+  - Bağlantı havuzu yönetimi
 
-##### 2. Veri Yönetimi
-- [ ] Basit Veritabanı Uygulaması
-  - SQLite entegrasyonu
-  - CRUD işlemleri
-  - Veri modelleme
-
-##### 3. API ve Web Servisleri
+##### 2. API ve Web Servisleri
 - [ ] Hava Durumu Uygulaması
   - HTTP istekleri
   - JSON parsing
   - API entegrasyonu
   - Asenkron programlama
 
-##### 4. Dosya İşlemleri
+##### 3. Dosya İşlemleri
 - [ ] Dosya Organizasyon Aracı
   - Dosya sistemi işlemleri
   - Dosya kopyalama/taşıma
   - Dosya metadata işlemleri
 
-##### 5. Finansal Uygulamalar
+##### 4. Finansal Uygulamalar
 - [ ] Basit Muhasebe Programı
   - Gelir/gider takibi
   - Kategori yönetimi
   - Raporlama
 
-##### 6. Sistem Programlama
+##### 5. Sistem Programlama
 - [ ] Sistem Monitörü
   - CPU kullanımı
   - Bellek kullanımı
   - Disk kullanımı
 
-##### 7. Ağ Programlama
+##### 6. Ağ Programlama
 - [ ] Basit Chat Uygulaması
   - TCP/UDP kullanımı
   - Çoklu istemci desteği
