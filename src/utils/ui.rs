@@ -1,7 +1,11 @@
 use std::str::FromStr;
 
 use chrono::NaiveDate;
-use inquire::{CustomType, DateSelect, MultiSelect, Select};
+use inquire::{CustomType, DateSelect, MultiSelect, Select, Text};
+
+pub fn get_text(message: &str) -> String {
+    Text::new(message).prompt().unwrap()
+}
 
 pub fn get_input<T: FromStr + Clone + ToString>(message: &str) -> T {
     CustomType::<T>::new(message).prompt().unwrap()
