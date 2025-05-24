@@ -5,6 +5,7 @@ mod hello;
 mod name_db;
 mod todo;
 mod utils;
+mod xsdb;
 
 fn main() {
     let functions = [
@@ -14,6 +15,7 @@ fn main() {
         ("Calculator V3", calculator_v3::main::calculator as fn()),
         ("Name DB", name_db::name_db as fn()),
         ("Todo", todo::main::main as fn()),
+        ("XSDb", xsdb::cli::main as fn()),
     ];
 
     let input: u8 = utils::ui::ui_select(
