@@ -16,7 +16,9 @@ cargo test
 
 ### Rust Öğrenme Yol Haritası 🚀
 
-#### Tamamlanan Projeler ✅
+
+#### Yapılacak Projeler 📝
+
 - [x] Hello World (hello.rs)
   - Temel Rust programı
   - Println! makrosu kullanımı
@@ -51,40 +53,32 @@ cargo test
   - Hata yönetimi
   - Veritabanı işlemleri
 
-#### Yapılacak Projeler 📝
-
-##### 1. API ve Web Servisleri
-- [ ] Hava Durumu Uygulaması
+- [x] Hava Durumu Uygulaması
   - HTTP istekleri
   - JSON parsing
   - API entegrasyonu
   - Asenkron programlama
 
-##### 2. Dosya İşlemleri
 - [ ] Dosya Organizasyon Aracı
   - Dosya sistemi işlemleri
   - Dosya kopyalama/taşıma
   - Dosya metadata işlemleri
 
-##### 3. Finansal Uygulamalar
 - [ ] Basit Muhasebe Programı
   - Gelir/gider takibi
   - Kategori yönetimi
   - Raporlama
 
-##### 4. Sistem Programlama
 - [ ] Sistem Monitörü
   - CPU kullanımı
   - Bellek kullanımı
   - Disk kullanımı
 
-##### 5. Ağ Programlama
 - [ ] Basit Chat Uygulaması
   - TCP/UDP kullanımı
   - Çoklu istemci desteği
   - Basit protokol implementasyonu
 
-##### 6. Veri Yönetimi
 - [ ] Gelişmiş Veritabanı Uygulaması
   - İlişkisel veritabanı tasarımı
   - Karmaşık sorgular

@@ -5,6 +5,7 @@ mod hello;
 mod name_db;
 mod todo;
 mod utils;
+mod weather;
 mod xsdb;
 
 fn main() {
@@ -16,6 +17,7 @@ fn main() {
         ("Name DB", name_db::name_db as fn()),
         ("Todo", todo::main::main as fn()),
         ("XSDb", xsdb::cli::main as fn()),
+        ("Weather", weather::api::main as fn()),
     ];
 
     let input: u8 = utils::ui::ui_select(
