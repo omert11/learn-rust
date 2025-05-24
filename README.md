@@ -53,40 +53,40 @@ cargo test
 
 #### Yapılacak Projeler 📝
 
-##### 1. Veri Yönetimi
-- [ ] Gelişmiş Veritabanı Uygulaması
-  - İlişkisel veritabanı tasarımı
-  - Karmaşık sorgular
-  - Migrations sistemi
-  - Bağlantı havuzu yönetimi
-
-##### 2. API ve Web Servisleri
+##### 1. API ve Web Servisleri
 - [ ] Hava Durumu Uygulaması
   - HTTP istekleri
   - JSON parsing
   - API entegrasyonu
   - Asenkron programlama
 
-##### 3. Dosya İşlemleri
+##### 2. Dosya İşlemleri
 - [ ] Dosya Organizasyon Aracı
   - Dosya sistemi işlemleri
   - Dosya kopyalama/taşıma
   - Dosya metadata işlemleri
 
-##### 4. Finansal Uygulamalar
+##### 3. Finansal Uygulamalar
 - [ ] Basit Muhasebe Programı
   - Gelir/gider takibi
   - Kategori yönetimi
   - Raporlama
 
-##### 5. Sistem Programlama
+##### 4. Sistem Programlama
 - [ ] Sistem Monitörü
   - CPU kullanımı
   - Bellek kullanımı
   - Disk kullanımı
 
-##### 6. Ağ Programlama
+##### 5. Ağ Programlama
 - [ ] Basit Chat Uygulaması
   - TCP/UDP kullanımı
   - Çoklu istemci desteği
   - Basit protokol implementasyonu
+
+##### 6. Veri Yönetimi
+- [ ] Gelişmiş Veritabanı Uygulaması
+  - İlişkisel veritabanı tasarımı
+  - Karmaşık sorgular
+  - Migrations sistemi
+  - Bağlantı havuzu yönetimi
