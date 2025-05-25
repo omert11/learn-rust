@@ -176,6 +176,7 @@ impl<'s> fmt::Display for Token<'s> {
     }
 }
 
+#[allow(dead_code)]
 impl<'s> Token<'s> {
     pub(crate) fn eof(source: &'s str) -> Self {
         Token {

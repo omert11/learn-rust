@@ -3,6 +3,7 @@ use std::{iter::Peekable, slice::Iter};
 use super::tokenizer::{Token, TokenKind};
 
 #[derive(Debug)]
+#[allow(dead_code)]
 pub enum BodyKind {
     CreateTable,
     Field,
@@ -16,6 +17,7 @@ pub enum WhenKind {
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 pub struct Query {
     body: BodyKind,
     when: WhenKind,
