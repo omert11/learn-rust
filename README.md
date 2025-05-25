@@ -59,28 +59,7 @@ cargo test
   - API entegrasyonu
   - Asenkron programlama
 
-- [ ] Dosya Organizasyon Aracı
-  - Dosya sistemi işlemleri
-  - Dosya kopyalama/taşıma
-  - Dosya metadata işlemleri
-
-- [ ] Basit Muhasebe Programı
+- [x] Basit Muhasebe Programı
   - Gelir/gider takibi
   - Kategori yönetimi
   - Raporlama
-
-- [ ] Sistem Monitörü
-  - CPU kullanımı
-  - Bellek kullanımı
-  - Disk kullanımı
-
-- [ ] Basit Chat Uygulaması
-  - TCP/UDP kullanımı
-  - Çoklu istemci desteği
-  - Basit protokol implementasyonu
-
-- [ ] Gelişmiş Veritabanı Uygulaması
-  - İlişkisel veritabanı tasarımı
-  - Karmaşık sorgular
-  - Migrations sistemi
-  - Bağlantı havuzu yönetimi

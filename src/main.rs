@@ -1,3 +1,4 @@
+mod accounting;
 mod calculator_v1;
 mod calculator_v2;
 mod calculator_v3;
@@ -18,6 +19,7 @@ fn main() {
         ("Todo", todo::main::main as fn()),
         ("XSDb", xsdb::cli::main as fn()),
         ("Weather", weather::api::main as fn()),
+        ("Accounting", accounting::main::main as fn()),
     ];
 
     let input: u8 = utils::ui::ui_select(
